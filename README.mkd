@@ -1,7 +1,8 @@
 These are some scripts for use with [perp][]. To install, copy them to your
 PERP_BASE (usually /etc/perp).
 
-To enable the service, set the sticky bit with chmod +t.
+To enable the service, set the sticky bit on the service directory with
+chmod +t.
 
 If you are using my [supervisor-utils][] package, a suitable rc.log can be
 found in ${PERP_BASE}/.default/rc.log. You can enable logging for a particular
