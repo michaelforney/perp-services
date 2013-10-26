@@ -1,0 +1,12 @@
+These are some scripts for use with [perp][]. To install, copy them to your
+PERP_BASE (usually /etc/perp).
+
+To enable the service, set the sticky bit with chmod +t.
+
+If you are using my [supervisor-utils][] package, a suitable rc.log can be
+found in ${PERP_BASE}/.default/rc.log. You can enable logging for a particular
+service by creating a symlink to ../.default/rc.log in the service directory.
+
+[perp]: http://b0llix.net/perp/
+[supervisor-utils]: https://github.com/michaelforney/supervisor-utils
+
