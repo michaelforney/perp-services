@@ -1,0 +1,6 @@
+#!/bin/bash
+
+[[ ${1} == start ]] || exit
+
+exec mpd --no-daemon
+

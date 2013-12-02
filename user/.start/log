@@ -1,0 +1,5 @@
+#!/bin/bash
+
+[[ -d ~/.log/perpd ]] || mkdir -p ~/.log/perpd
+exec ${LOG_CMD} ~/.log/perpd
+

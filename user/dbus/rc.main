@@ -1,0 +1,10 @@
+#!/bin/bash
+
+[[ ${1} == start ]] || exit
+
+umask 022
+
+[[ -d ${XDG_RUNTIME_DIR}/dbus ]] || mkdir ${XDG_RUNTIME_DIR}/dbus
+exec dbus-daemon --session --nofork \
+    --address="${DBUS_SESSION_BUS_ADDRESS}"
+
